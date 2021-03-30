@@ -1,346 +1,151 @@
 # Java design patterns
 
 ## Content
-[1. Abstract Document](#abstract-document)
-
-[2. Abstract Factory](#abstract-factory)
-
-[3. Acyclic Visitor](#acyclic-visitor)
-
-[4. Adapter](#adapter)
-
-[5. Aggregator Microservices](#aggregator-microservices)
-
-[6. Ambassaddor](#ambassador)
-
-[7. Api Gatway](#api-gateway)
-
-[8. Arrange/Act/Assert](#arrangeactassert)
-
-[9. Async Method Invocation](#async-method-invocation)
-
-[10. Balking](#balking)
-
-[11. Bridge](#bridge)
-
-[12. Builder](#builder)
-
-[13. Business Delegete](#business-delegate)
-
-[14. Bytecode](#bytecode)
-
-[15. Caching](#caching)
-
-[16. Callback](#callback)
-
-[17. Chain of Responsibility](#chain-of-responsibility)
-
-[18. Circuit Breaker](#circuit-breaker)
-
-[19. Collection Pipeline](#collection-pipelline)
-
-[20. Combinator](#combinator)
-
-[21. Command](#command)
-
-[22. Commander](#commander)
-
-[23. Composite](#composite)
-
-[24. Converter](#converter)
-
-[25. CQRS](#cqrs)
-
-[26. DAO](#DAO)
-
-[27. Data Bus](#data-bus)
-
-[28. Data Locality](#data-locality)
-
-[29. Data Mapper](#data-mapper)
-
-[30. Data Transfer Object](#data-transfer-object)
-
-[31. Decorator](#decorator)
-
-[32. Delegation](#delegation)
-
-[33. Dependency Injection](#dependency-injection)
-
-[34. Dirty Flag](#dirty-flag)
-
-[35. Double Buffer](#double-buffer)
-
-[36. Double Checked Locking](#double-checked-locking)
-
-[37. Double Dispatch](#double-dispatch)
-
-[38. EIP Aggregator](#eip-aggregator)
-
-[39. EIP Message Channel](#eip-message-channel)
-
-[40. EIP Publish Subscribe](#eip-publish-subscribe)
-
-[41. EIP Splitter](#eip-splitter)
-
-[42. EIP Wire Tap](#eip-wire-tap)
-
-[43. Event Aggregator](#event-aggregator)
-
-[44. Event Asynchronous](#event-asynchronous)
-
-[45. Event Driven Architecture](#event-driven-architecture)
-
-[46. Event Queue](#event-queue)
-
-[47. Event Sourcing](#event-sourcing)
-
-[48. Execute Around](#execute-around)
-
-[49. Extension Objects](#extension-objects)
-
-[50. Facade](#facade)
-
-[51. Factory](#factory)
-
-[52. Factory Kit](#factory-kit)
-
-[53. Factory Method](#factory-method)
-
-[54. Feature Toogle](#feature-toggle)
-
-[55. Filterer](#filterer)
-
-[56. Fluent Interface](#fluent-interface)
-
-[57. Flux](#flux)
-
-[58. Flyweight](#flyweight)
-
-[59. Front Controller](#front-controller)
-
-[60. Game Loop](#game-loop)
-
-[61. Guarded Suspension](#guarded-suspension)
-
-[62. Half Sync Half Async](#half-synchalf-async)
-
-[63. Hexagonal Architecture](#hexagonal-architecture)
-
-[64. Intercepting Filter](#intercepting-filter)
-
-[65. Interpreter](#interpreter)
-
-[66. Iterator](#iterator)
-
-[67. Layers](#layers)
-
-[68. Lazy Loading](#lazy-loading)
-
-[69. Leader Election](#leader-election)
-
-[70. Leader Followers](#leader-followers)
-
-[71. Marker Interface](#marker-interface)
-
-[72. Master Worker](#master-worker)
-
-[73. Mediator](#mediator)
-
-[74. Memento](#memento)
-
-[75. Model View Controller](#model-view-controller)
-
-[76. Model View Presenter](#model-view-presenter)
-
-[77. Module](#module)
-
-[78. Monad](#monad)
-
-[79. Monostate](#monostate)
-
-[80. Multiton](#multiton)
-
-[81. Mute Idiom](#mute-idiom)
-
-[82. Naked Objects](#naked-objects)
-
-[83. Null Object](#null-object)
-
-[84. Object Mother](#object-mother)
-
-[85. Object Pool](#object-pool)
-
-[86. Observer](#observer)
-
-[87. Page Object](#page-object)
-
-[88. Partial Response](#partial-response)
-
-[89. Pipeline](#pipeline)
-
-[90. Poison Pill](#poison-pill)
-
-[91. Priority Queue](#priority-queue-pattern)
-
-[92. Private Class Data](#private-class-data)
-
-[93. Producer Consumer](#producer-consumer)
-
-[94. Promise](#promise)
-
-[95. Property](#property)
-
-[96. Prototype](#prototype)
-
-[97. Proxy](#proxy)
-
-[98. Queue Load Leveling](#queue-based-load-leveling)
-
-[99. Reactor](#reactor)
-
-[100. Reder Writer Lock](#reader-writer-lock)
-
-[101. Registry](#registry)
-
-[102. Repository](#repository)
-
-[103. Resource Acquisition Is Initialization](#resource-acquisition-is-initialization)
-
-[104. Retry](#retry)
-
-[105. Role Object](#role-object)
-
-[106. Saga](#saga)
-
-[107. Separated Interface](#separated-interface)
-
-[108. Servant](#servant)
-
-[109. Serverless](#serverless)
-
-[110. Service Layer](#service-layer)
-
-[111. Service Locator](#service-locator)
-
-[112. Sharding](#sharding)
-
-[113. Singleton](#singleton)
-
-[114. Spatial Partition](#spatial-partition)
-
-[115. Special Case](#special-case)
-
-[116. Specification](#specification)
-
-[117. State](#state)
-
-[118. Step Builder](#step-builder)
-
-[119. Strangler](#strangler)
-
-[120. Strategy](#strategy)
-
-[121. Subclass Sandbox](#subclass-sandbox)
-
-[122. Template Method](#template-method)
-
-[123. Thread Pool](#thread-pool)
-
-[124. Throttling](#throttling)
-
-[125. Thread Local Storage](#thread-local-storage)
-
-[126. Tolerant Reader](#tolerant-reader)
-
-[127. Trampoline](#trampoline)
-
-[128. Transaction Script](#transaction-script)
-
-[129. Twin](#twin)
-
-[130. Type Object Pattern](#type-object-pattern)
-
-[131. Unit of Work](#unit-of-work)
-
-[132. Update Method](#update-method)
-
-[133. Value Object](#value-object)
-
-[134. Version Number](#version-number)
-
-[135. Visitor](#visitor)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
+[1. Abstract Document](#abstract-document) (structural)
+[2. Abstract Factory](#abstract-factory) (creational)
+[3. Active Object](#active-object) (concurrency)
+[4. Acyclic Visitor](#acyclic-visitor) (behavioral)
+[5. Adapter](#adapter) (structural)
+[6. Aggregator Microservices](#aggregator-microservices) (architectural)
+[7. Ambassador](#ambassador) (structural)
+[8. Api Gateway](#api-gateway) (architectural)
+[9. Arrange/Act/Assert](#arrangeactassert) (idiom)
+[10. Async Method Invocation](#async-method-invocation) (concurrency)
+[11. Balking](#balking) (concurrency)
+[12. Bridge](#bridge) (structural)
+[13. Builder](#builder) (creational)
+[14. Business Delegete](#business-delegate) (structural)
+[15. Bytecode](#bytecode) (behavioral)
+[16. Caching](#caching) (behavioral)
+[17. Callback](#callback) (idiom)
+[18. Chain of Responsibility](#chain-of-responsibility) (behavioral)
+[19. Circuit Breaker](#circuit-breaker) (behavioral)
+[20. Collection Pipeline](#collection-pipelline) (functional)
+[21. Combinator](#combinator) (idiom)
+[22. Command](#command) (behavioral)
+[23. Commander](#commander) (concurrency)
+[24. Composite](#composite) (structural)
+[25. Converter](#converter) (creational)
+[26. CQRS](#cqrs) (architectural)
+[27. Data Access Object](#data-access-object) (architectural)
+[28. Data Bus](#data-bus) (architectural)
+[29. Data Locality](#data-locality) (behavioral)
+[30. Data Mapper](#data-mapper) (architectural)
+[31. Data Transfer Object](#data-transfer-object) (architectural)
+[32. Decorator](#decorator) (structural)
+[33. Delegation](#delegation) (structural)
+[34. Dependency Injection](#dependency-injection) (creational)
+[35. Dirty Flag](#dirty-flag) (behavioral)
+[36. Double Buffer](#double-buffer) (behavioral)
+[37. Double Checked Locking](#double-checked-locking) (idiom)
+[38. Double Dispatch](#double-dispatch) (idiom)
+[39. EIP Aggregator](#eip-aggregator) (integration)
+[40. EIP Message Channel](#eip-message-channel) (integration)
+[41. EIP Publish Subscribe](#eip-publish-subscribe) (integration)
+[42. EIP Splitter](#eip-splitter) (integration)
+[43. EIP Wire Tap](#eip-wire-tap) (integration)
+[44. Event Aggregator](#event-aggregator) (structural)
+[45. Event Based Asynchronous](#event-asynchronous) (concurrency)
+[46. Event Driven Architecture](#event-driven-architecture) (architectural)
+[47. Event Queue](#event-queue) (concurrency)
+[48. Event Sourcing](#event-sourcing) (architectural)
+[49. Execute Around](#execute-around) (idiom)
+[50. Extension Objects](#extension-objects) (behavioral)
+[51. Facade](#facade) (structural)
+[52. Factory](#factory) (creational)
+[53. Factory Kit](#factory-kit) (creational)
+[54. Factory Method](#factory-method) (creational)
+[55. Feature Toogle](#feature-toggle) (behavioral)
+[56. Filterer](#filterer) (functional)
+[57. Fluent Interface](#fluent-interface) (functional)
+[58. Flux](#flux) (structural)
+[59. Flyweight](#flyweight) (structural)
+[60. Front Controller](#front-controller) (structural)
+[61. Game Loop](#game-loop) (behavioral)
+[62. Guarded Suspension](#guarded-suspension) (concurrency)
+[63. Half Sync Half Async](#half-synchalf-async) (concurrency)
+[64. Hexagonal Architecture](#hexagonal-architecture) (architectural)
+[65. Intercepting Filter](#intercepting-filter) (behavioral)
+[66. Interpreter](#interpreter) (behavioral)
+[67. Iterator](#iterator) (behavioral)
+[68. Layers](#layers) (architectural)
+[69. Lazy Loading](#lazy-loading) (idiom)
+[70. Leader Election](#leader-election) (behavioral)
+[71. Leader Followers](#leader-followers) (concurrency)
+[72. Marker Interface](#marker-interface) (structural)
+[73. Master Worker](#master-worker) (concurrency)
+[74. Mediator](#mediator) (behavioral)
+[75. Memento](#memento) (behavioral)
+[76. Model View Controller](#model-view-controller) (architectural)
+[77. Model View Presenter](#model-view-presenter) (architectural)
+[78. Model View View Model](#model-view-view-model) (architectural)
+[79. Module](#module) (structural)
+[80. Monad](#monad) (functional)
+[81. Monostate](#monostate) (creational)
+[82. Multiton](#multiton) (creational)
+[83. Mute Idiom](#mute-idiom) (idiom)
+[84. Naked Objects](#naked-objects) (architectural)
+[85. Null Object](#null-object) (behavioral)
+[86. Object Mother](#object-mother) (creational)
+[87. Object Pool](#object-pool) (creational)
+[88. Observer](#observer) (behavioral)
+[89. Page Object](#page-object) (structural)
+[90. Parameter Object](#parameter-object) (behavioral)
+[91. Partial Response](#partial-response) (behavioral)
+[92. Pipeline](#pipeline) (behavioral)
+[93. Poison Pill](#poison-pill) (behavioral)
+[94. Priority Queue](#priority-queue-pattern) (behavioral)
+[95. Private Class Data](#private-class-data) (idiom)
+[96. Producer Consumer](#producer-consumer) (concurrency)
+[97. Promise](#promise) (concurrency)
+[98. Property](#property) (creational)
+[99. Prototype](#prototype) (creational)
+[100. Proxy](#proxy) (structural)
+[101. Queue Based Load Leveling](#queue-based-load-leveling) (concurrency)
+[102. Reactor](#reactor) (concurrency)
+[103. Reder Writer Lock](#reader-writer-lock) (concurrency)
+[104. Registry](#registry) (creational)
+[105. Repository](#repository) (architectural)
+[106. Resource Acquisition Is Initialization](#resource-acquisition-is-initialization) (idiom)
+[107. Retry](#retry) (behavioral)
+[108. Role Object](#role-object) (structural)
+[109. Saga](#saga) (concurrency)
+[110. Separated Interface](#separated-interface) (structural)
+[111. Servant](#servant) (behavioral)
+[112. Serverless](#serverless) (architectural)
+[113. Service Layer](#service-layer) (architectural)
+[114. Service Locator](#service-locator) (architectural)
+[115. Sharding](#sharding) (behavioral)
+[116. Singleton](#singleton) (creational)
+[117. Spatial Partition](#spatial-partition) (behavioral)
+[118. Special Case](#special-case) (behavioral)
+[119. Specification](#specification) (behavioral)
+[120. State](#state) (behavioral)
+[121. Static Content Hosting](#static-content-hosting) (cloud)
+[122. Step Builder](#step-builder) (creational)
+[123. Strangler](#strangler) (structural)
+[124. Strategy](#strategy) (behavioral)
+[125. Subclass Sandbox](#subclass-sandbox) (behavioral)
+[126. Template Method](#template-method) (behavioral)
+[127. Thread Pool](#thread-pool) (concurrency)
+[128. Throttling](#throttling) (behavioral)
+[129. Thread Local Storage](#thread-local-storage) (idiom)
+[130. Tolerant Reader](#tolerant-reader) (integration)
+[131. Trampoline](#trampoline) (behavioral)
+[132. Transaction Script](#transaction-script) (behavioral)
+[133. Twin](#twin) (structural)
+[134. Type Object Pattern](#type-object-pattern) (behavioral)
+[135. Unit of Work](#unit-of-work) (architectural)
+[136. Update Method](#update-method) (behavioral)
+[137. Value Object](#value-object) (creational)
+[138. Version Number](#version-number) (concurrency)
+[139. Visitor](#visitor) (behavioral)
 
 
 
 ---
 ## Abstract Document                                                                                                                                    
 [⬆](#content)
-
-
 ---
 layout: pattern
 title: Abstract Document
@@ -535,7 +340,6 @@ Use the Abstract Document Pattern when
 
 ## Abstract Factory 
 [⬆](#content)
-
 ---
 layout: pattern
 title: Abstract Factory
@@ -759,10 +563,136 @@ Use the Abstract Factory pattern when
 * [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com/gp/product/0201633612/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0201633612&linkCode=as2&tag=javadesignpat-20&linkId=675d49790ce11db99d90bde47f1aeb59)
 * [Head First Design Patterns: A Brain-Friendly Guide](https://www.amazon.com/gp/product/0596007124/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0596007124&linkCode=as2&tag=javadesignpat-20&linkId=6b8b6eea86021af6c8e3cd3fc382cb5b)
 
+## Active Object
+[⬆](#content)
+---
+layout: pattern
+title: Active Object
+folder: active-object
+permalink: /patterns/active-object/
+categories: Concurrency
+tags:
+ - Performance
+---
+
+
+## Intent
+The active object design pattern decouples method execution from method invocation for objects that each reside in their thread of control. The goal is to introduce concurrency, by using asynchronous method invocation and a scheduler for handling requests.
+
+## Explanation
+
+The class that implements the active object pattern will contain a self-synchronization mechanism without using 'synchronized' methods.
+
+Real-world example
+
+>The Orcs are known for their wildness and untameable soul. It seems like they have their own thread of control based on previous behavior.
+
+To implement a creature that has its own thread of control mechanism and expose its API only and not the execution itself, we can use the Active Object pattern.
+
+
+**Programmatic Example**
+
+```java
+public abstract class ActiveCreature{
+  private final Logger logger = LoggerFactory.getLogger(ActiveCreature.class.getName());
+
+  private BlockingQueue<Runnable> requests;
+  
+  private String name;
+  
+  private Thread thread;
+
+  public ActiveCreature(String name) {
+    this.name = name;
+    this.requests = new LinkedBlockingQueue<Runnable>();
+    thread = new Thread(new Runnable() {
+        @Override
+        public void run() {
+          while (true) {
+            try {
+              requests.take().run();
+            } catch (InterruptedException e) { 
+              logger.error(e.getMessage());
+            }
+          }
+        }
+      }
+    );
+    thread.start();
+  }
+  
+  public void eat() throws InterruptedException {
+    requests.put(new Runnable() {
+        @Override
+        public void run() { 
+          logger.info("{} is eating!",name());
+          logger.info("{} has finished eating!",name());
+        }
+      }
+    );
+  }
+
+  public void roam() throws InterruptedException {
+    requests.put(new Runnable() {
+        @Override
+        public void run() { 
+          logger.info("{} has started to roam and the wastelands.",name());
+        }
+      }
+    );
+  }
+  
+  public String name() {
+    return this.name;
+  }
+}
+```
+
+We can see that any class that will extend the ActiveCreature class will have its own thread of control to execute and invocate methods.
+
+For example, the Orc class:
+
+```java
+public class Orc extends ActiveCreature {
+
+  public Orc(String name) {
+    super(name);
+  }
+
+}
+```
+
+Now, we can create multiple creatures such as Orcs, tell them to eat and roam and they will execute it on their own thread of control:
+
+```java
+  public static void main(String[] args) {  
+    var app = new App();
+    app.run();
+  }
+  
+  @Override
+  public void run() {
+    ActiveCreature creature;
+    try {
+      for (int i = 0;i < creatures;i++) {
+        creature = new Orc(Orc.class.getSimpleName().toString() + i);
+        creature.eat();
+        creature.roam();
+      }
+      Thread.sleep(1000);
+    } catch (InterruptedException e) {
+      logger.error(e.getMessage());
+    }
+    Runtime.getRuntime().exit(1);
+  }
+```
+
+## Class diagram
+
+![alt text](./etc/active-object.urm.PNG "Active Object class diagram")
 
 ## Acyclic Visitor
 [⬆](#content)
-
 ---
 layout: pattern
 title: Acyclic Visitor
@@ -927,7 +857,6 @@ The bad:
 
 ## Adapter
 [⬆](#content)
-
 ---
 layout: pattern
 title: Adapter
@@ -1066,7 +995,6 @@ An object adapter
 
 ## Aggregator Microservices
 [⬆](#content)
-
 ---
 layout: pattern
 title: Aggregator Microservices
@@ -1179,7 +1107,6 @@ Use the Aggregator Microservices pattern when you need a unified API for various
 
 ## Ambassador
 [⬆](#content)
-
 ---
 layout: pattern
 title: Ambassador
@@ -1390,7 +1317,6 @@ service.
 
 ## Api Gateway
 [⬆](#content)
-
 ---
 layout: pattern
 title: API Gateway
@@ -1557,7 +1483,6 @@ Use the API Gateway pattern when
 
 ## Arrange/Act/Assert
 [⬆](#content)
-
 ---
 layout: pattern
 title: Arrange/Act/Assert
@@ -1707,7 +1632,6 @@ Use Arrange/Act/Assert pattern when
 
 ## Async Method Invocation
 [⬆](#content)
-
 ---
 layout: pattern
 title: Async Method Invocation
@@ -1742,7 +1666,6 @@ Use async method invocation pattern when
 
 ## Balking
 [⬆](#content)
-
 ---
 layout: pattern
 title: Balking
@@ -1773,7 +1696,6 @@ but for an unknown amount of time
 
 ## Bridge
 [⬆](#content)
-
 ---
 layout: pattern
 title: Bridge
@@ -1985,7 +1907,6 @@ Use the Bridge pattern when
 
 ## Builder
 [⬆](#content)
-
 ---
 layout: pattern
 title: Builder
@@ -2140,7 +2061,6 @@ Use the Builder pattern when
 
 ## Business Delegate
 [⬆](#content)
-
 ---
 layout: pattern
 title: Business Delegate
@@ -2174,7 +2094,6 @@ Use the Business Delegate pattern when
 
 ## Bytecode
 [⬆](#content)
-
 ---
 layout: pattern
 title: Bytecode
@@ -2205,7 +2124,6 @@ game’s implementation language isn’t a good fit because:
 
 ## Caching
 [⬆](#content)
-
 ---
 layout: pattern
 title: Caching
@@ -2239,7 +2157,6 @@ Use the Caching pattern(s) when
 
 ## Callback
 [⬆](#content)
-
 ---
 layout: pattern
 title: Callback
@@ -2331,7 +2248,6 @@ Use the Callback pattern when
 
 ## Chain of Responsibility
 [⬆](#content)
-
 ---
 layout: pattern
 title: Chain of responsibility
@@ -2504,7 +2420,6 @@ Use Chain of Responsibility when
 
 ## Circuit Breaker
 [⬆](#content)
-
 ---
 layout: pattern
 title: Circuit Breaker
@@ -2834,9 +2749,8 @@ Use the Circuit Breaker pattern when
 * [Fault tolerance in a high volume, distributed system](https://medium.com/netflix-techblog/fault-tolerance-in-a-high-volume-distributed-system-91ab4faae74a)
 * [Circuit Breaker pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker)
 
-## Collection Pipelline
+## Collection Pipeline
 [⬆](#content)
-
 ---
 layout: pattern
 title: Collection Pipeline
@@ -2870,7 +2784,6 @@ Use the Collection Pipeline pattern when
 
 ## Combinator
 [⬆](#content)
-
 ---
 layout: pattern
 title: Combinator
@@ -2910,7 +2823,6 @@ Use the combinator pattern when:
 
 ## Command
 [⬆](#content)
-
 ---
 layout: pattern
 title: Command
@@ -3155,7 +3067,6 @@ system with new transactions.
 
 ## Commander
 [⬆](#content)
-
 ---
 layout: pattern
 title: Commander
@@ -3186,7 +3097,6 @@ We need a mechanism in place which can handle these kinds of situations. We have
 
 ## Composite
 [⬆](#content)
-
 ---
 layout: pattern
 title: Composite
@@ -3374,7 +3284,6 @@ individual objects. Clients will treat all objects in the composite structure un
 
 ## Converter
 [⬆](#content)
-
 ---
 layout: pattern
 title: Converter
@@ -3487,7 +3396,6 @@ domain equivalence.
 
 ## CQRS
 [⬆](#content)
-
 ---
 layout: pattern
 title: CQRS
@@ -3520,9 +3428,8 @@ Use the CQRS pattern when
 * [Command and Query Responsibility Segregation (CQRS) pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)
 
 
-## DAO
+## Data Access Object
 [⬆](#content)
-
 ---
 layout: pattern
 title: Data Access Object
@@ -3689,7 +3596,6 @@ Use the Data Access Object in any of the following situations:
 
 ## Data Bus
 [⬆](#content)
-
 ---
 layout: pattern
 title: Data Bus
@@ -3726,7 +3632,6 @@ Data Bus is similar to
 
 ## Data Locality
 [⬆](#content)
-
 ---
 layout: pattern
 title: Data Locality
@@ -3762,7 +3667,6 @@ Modern CPUs have caches to speed up memory access. These can access memory adjac
 
 ## Data Mapper
 [⬆](#content)
-
 ---
 layout: pattern
 title: Data Mapper
@@ -3791,7 +3695,6 @@ Use the Data Mapper in any of the following situations
 
 ## Data Transfer Object
 [⬆](#content)
-
 ---
 layout: pattern
 title: Data Transfer Object
@@ -3913,7 +3816,6 @@ Use the Data Transfer Object pattern when:
 
 ## Decorator
 [⬆](#content)
-
 ---
 layout: pattern
 title: Decorator
@@ -4082,7 +3984,6 @@ definition may be hidden or otherwise unavailable for subclassing.
 
 ## Delegation
 [⬆](#content)
-
 ---
 layout: pattern
 title: Delegation
@@ -4116,7 +4017,6 @@ Use the Delegate pattern in order to achieve the following
 
 ## Dependency Injection
 [⬆](#content)
-
 ---
 layout: pattern
 title: Dependency Injection
@@ -4227,7 +4127,6 @@ Use the Dependency Injection pattern when:
 
 ## Dirty Flag
 [⬆](#content)
-
 ---
 layout: pattern
 title: Dirty Flag
@@ -4261,7 +4160,6 @@ Use the Dirty Flag pattern when
 
 ## Double Buffer
 [⬆](#content)
-
 ---  
 layout: pattern  
 title: Double Buffer 
@@ -4293,7 +4191,6 @@ This pattern is one of those ones where you’ll know when you need it. If you h
 
 ## Double Checked Locking
 [⬆](#content)
-
 ---
 layout: pattern
 title: Double Checked Locking
@@ -4321,7 +4218,6 @@ Use the Double Checked Locking pattern when
 
 ## Double Dispatch
 [⬆](#content)
-
 ---
 layout: pattern
 title: Double Dispatch
@@ -4350,7 +4246,6 @@ Use the Double Dispatch pattern when
 
 ## EIP Aggregator
 [⬆](#content)
-
 ---
 layout: pattern
 title: EIP Aggregator
@@ -4386,7 +4281,6 @@ Use the Aggregator pattern when
 
 ## EIP Message Channel
 [⬆](#content)
-
 ---
 layout: pattern
 title: EIP Message Channel
@@ -4417,7 +4311,6 @@ Use the Message Channel pattern when
 
 ## EIP Publish Subscribe
 [⬆](#content)
-
 ---
 layout: pattern
 title: EIP Publish Subscribe
@@ -4447,7 +4340,6 @@ Use the Publish Subscribe Channel pattern when
 
 ## EIP Splitter                                                                                                                         
 [⬆](#content)
-
 ---
 layout: pattern
 title: EIP Splitter
@@ -4483,7 +4375,6 @@ Use the Splitter pattern when
 
 ## EIP Wire Tap                                                                                                                         
 [⬆](#content)
-
 ---
 layout: pattern
 title: EIP Wire Tap
@@ -4517,7 +4408,6 @@ Use the Wire Tap pattern when
 
 ## Event Aggregator                                                                                                                         
 [⬆](#content)
-
 ---
 layout: pattern
 title: Event Aggregator
@@ -4554,7 +4444,6 @@ Use the Event Aggregator pattern when
 
 ## Event Asynchronous                                                                                                                         
 [⬆](#content)
-
 ---
 layout: pattern
 title: Event Asynchronous
@@ -4588,7 +4477,6 @@ Use the Event-based Asynchronous pattern(s) when
 
 ## Event Driven Architecture                                                                                                                         
 [⬆](#content)
-
 ---
 layout: pattern
 title: Event Driven Architecture
@@ -4629,7 +4517,6 @@ Use an Event-driven architecture when
 
 ## Event Queue                                                                                                                         
 [⬆](#content)
-
 ---
 layout: pattern
 title: Event Queue
@@ -4662,7 +4549,6 @@ Use the Event Queue pattern when
 
 ## Event Sourcing                                                                                                                         
 [⬆](#content)
-
 ---
 layout: pattern
 title: Event Sourcing
@@ -4701,7 +4587,6 @@ Use the Event Sourcing pattern when
 
 ## Execute Around                                                                                                                 
 [⬆](#content)
-
 ---
 layout: pattern
 title: Execute Around
@@ -4787,7 +4672,6 @@ allocate/deallocate.
 
 ## Extension Objects                                                                                                                 
 [⬆](#content)
-
 ---
 layout: pattern
 title: Extension objects
@@ -4820,7 +4704,6 @@ Use the Extension Objects pattern when:
 
 ## Facade                                                                                                                 
 [⬆](#content)
-
 ---
 layout: pattern
 title: Facade
@@ -5059,7 +4942,6 @@ communicate with each other solely through their facades.
 
 ## Factory                                                                                                         
 [⬆](#content)
-
 ---
 layout: pattern
 title: Factory
@@ -5207,7 +5089,6 @@ Cons
 
 ## Factory Kit                                                                                                   
 [⬆](#content)
-
 ---
 layout: pattern
 title: Factory Kit
@@ -5238,7 +5119,6 @@ Use the Factory Kit pattern when
 
 ## Factory Method                                                                                                   
 [⬆](#content)
-
 ---
 layout: pattern
 title: Factory Method
@@ -6105,7 +5985,6 @@ Use the Front Controller pattern when
 
 ## Game Loop
 [⬆](#content)
-
 ---  
 layout: pattern  
 title: Game Loop 
@@ -6363,7 +6242,6 @@ Stop variable-step game loop.
 
 ## Guarded Suspension
 [⬆](#content)
-
 ---
 layout: pattern
 title: Guarded Suspension
@@ -6390,7 +6268,6 @@ Use Guarded Suspension pattern when the developer knows that the method executio
 
 ## Half Sync/Half Async
 [⬆](#content)
-
 ---
 layout: pattern
 title: Half-Sync/Half-Async
@@ -6431,7 +6308,6 @@ Use Half-Sync/Half-Async pattern when
 
 ## Hexagonal Architecture
 [⬆](#content)
-
 ---
 layout: pattern
 title: Hexagonal Architecture
@@ -6475,7 +6351,6 @@ Use Hexagonal Architecture pattern when
 
 ## Intercepting Filter
 [⬆](#content)
-
 ---
 layout: pattern
 title: Intercepting Filter
@@ -6515,7 +6390,6 @@ Use the Intercepting Filter pattern when
 
 ## Interpreter
 [⬆](#content)
-
 ---
 layout: pattern
 title: Interpreter
@@ -6558,7 +6432,6 @@ trees. The Interpreter pattern works best when
 
 ## Iterator
 [⬆](#content)
-
 ---
 layout: pattern
 title: Iterator
@@ -6725,7 +6598,6 @@ Use the Iterator pattern
 
 ## Layers
 [⬆](#content)
-
 ---
 layout: pattern
 title: Layers
@@ -6844,7 +6716,6 @@ Use the Layers architecture when
 
 ## Lazy Loading
 [⬆](#content)
-
 ---
 layout: pattern
 title: Lazy Loading
@@ -6880,7 +6751,6 @@ Use the Lazy Loading idiom when
 
 ## Leader Election
 [⬆](#content)
-
 ---
 layout: pattern
 title: Leader Election
@@ -6917,7 +6787,6 @@ Do not use this pattern when
 
 ## Leader Followers
 [⬆](#content)
-
 ---
 layout: pattern
 title: Leader/Followers
@@ -6953,7 +6822,6 @@ Use Leader-Followers pattern when
 
 ## Marker Interface
 [⬆](#content)
-
 ---
 layout: pattern
 title: Marker Interface
@@ -6987,7 +6855,6 @@ Use the Marker Interface pattern when
 
 ## Master Worker
 [⬆](#content)
-
 ---
 layout: pattern
 title: Master-Worker
@@ -7022,7 +6889,6 @@ In this pattern, parallel processing is performed using a system consisting of a
 
 ## Mediator
 [⬆](#content)
-
 ---
 layout: pattern
 title: Mediator
@@ -7064,7 +6930,6 @@ Use the Mediator pattern when
 
 ## Memento
 [⬆](#content)
-
 ---
 layout: pattern
 title: Memento
@@ -7254,7 +7119,6 @@ object's encapsulation
 
 ## Model View Controller
 [⬆](#content)
-
 ---
 layout: pattern
 title: Model-View-Controller
@@ -7289,7 +7153,6 @@ Use the Model-View-Controller pattern when
 
 ## Model View Presenter
 [⬆](#content)
-
 ---
 layout: pattern
 title: Model-View-Presenter
@@ -7318,9 +7181,158 @@ situations
 
 * [MVP4J](https://github.com/amineoualialami/mvp4j)
 
+## Model View View Model
+[⬆](#content)
+---
+layout: pattern
+title: Model-View-ViewModel
+folder: model-view-viewmodel
+permalink: /patterns/model-view-viewmodel/
+categories: Architectural
+tags:
+- Decoupling
+---
+
+## Also known as
+
+Model–View–Binder
+
+## Intent
+
+To apply "[Separation of Concerns](https://java-design-patterns.com/principles/#separation-of-concerns)" to separate the logic from the UI components and allow developers to work on UI without affecting the logic and vice versa.
+
+## Explanation
+
+Wikipedia says
+
+> Model–view–viewmodel (MVVM) is a software architectural pattern that facilitates the separation of the development of the graphical user interface (the view) – be it via a markup language or GUI code – from the development of the business logic or back-end logic (the model) so that the view is not dependent on any specific model platform.
+
+**Programmatic Example**
+
+Zkoss implementation:
+
+> ViewModel will hold the business logic and expose the data from model to View
+
+```java
+public class BookViewModel {
+  @WireVariable
+  private List<Book> bookList;
+  private Book selectedBook;
+  private BookService bookService = new BookServiceImpl();
+  
+  public Book getSelectedBook() {
+    return selectedBook;
+  }
+
+  @NotifyChange("selectedBook")
+  public void setSelectedBook(Book selectedBook) {
+    this.selectedBook = selectedBook;
+  }
+
+  public List<Book> getBookList() {
+    return bookService.load();
+  }
+  
+  /** Deleting a book.
+   */
+  @Command
+  @NotifyChange({"selectedBook","bookList"})
+  public void deleteBook() {
+    if (selectedBook != null) {
+      getBookList().remove(selectedBook);
+      selectedBook = null;
+    }
+}
+```
+
+> View will have no logic, only UI elements
+
+```xml
+<zk>
+<window title="List of Books" border="normal" width="600px" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('com.iluwatar.model.view.viewmodel.BookViewModel')">
+    <vbox hflex="true">
+        <listbox model="@bind(vm.bookList)" selectedItem="@bind(vm.selectedBook)" height="400px" mold="paging">
+            <listhead>
+                <listheader label="Book Name"/>
+                <listheader label="Author"/>               
+            </listhead>
+            <template name="model" var="book">
+                <listitem >
+                    <listcell label="@bind(book.name)"/>
+                    <listcell label="@bind(book.author)"/>
+                </listitem>
+            </template>
+        </listbox>
+    </vbox>
+    <toolbar>
+        <button label="Delete" onClick="@command('deleteBook')" disabled="@load(empty vm.selectedBook)" />
+    </toolbar>
+    <hbox style="margin-top:20px" visible="@bind(not empty vm.selectedBook)">
+		<vbox>
+			<hlayout>
+				Book Name : <label value="@bind(vm.selectedBook.name)" style="font-weight:bold"/>
+			</hlayout>
+			<hlayout>
+				Book Author : <label value="@bind(vm.selectedBook.author)" style="font-weight:bold"/>
+			</hlayout>
+			<hlayout>
+				Book Description : <label value="@bind(vm.selectedBook.description)" style="font-weight:bold"/>
+			</hlayout>
+		</vbox>
+	</hbox>
+</window>
+</zk>
+```
+
+To deploy the example, go to model-view-viewmodel folder and run:
+
+* `mvn clean install`
+* `mvn jetty:run -Djetty.http.port=9911`
+* Open browser to address: http://localhost:9911/model-view-viewmodel/
+
+## Class diagram
+
+![alt text](./etc/model-view-viewmodel.png "MVVM pattern class diagram")
+
+## Applicability
+
+* When looking for clean architecture, with better reusability, testability and maintainability.
+
+## Tutorials
+
+* [Zkoss Demo](https://www.zkoss.org/zkdemo/getting_started/mvvm)
+* [Learn MVVM](https://www.learnmvvm.com/)
+* [Android Developer CodeLabs](https://codelabs.developers.google.com/codelabs/android-databinding)
+
+## Typical Use Case
+
+* Android apps
+* .NET framework applications
+* JavaScript applications
+
+## Real world examples
+
+* ZK Framework [zkoss.org](https://www.zkoss.org/)
+* KnockoutJS [knockoutjs.com](https://knockoutjs.com/)
+
+## Consequences
+
+* John Gossman has criticized the MVVM pattern and its application in specific uses, stating that MVVM can be "overkill" when creating simple user interfaces. For larger applications, he believes that generalizing the viewmodel upfront can be difficult, and that large-scale data binding can lead to lower performance - Ref: [MVVM-Wiki](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)
+
+* Can be hard to design ViewModel for larger applications.
+* For complex databinding, debugging can be difficult.
+
+## Credits
+
+* [ZK MVVM](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVVM)
+* [GeeksforGeeks  MVVM Intro](https://www.geeksforgeeks.org/introduction-to-model-view-view-model-mvvm/)
+* [ZK MVVM Book](http://books.zkoss.org/zk-mvvm-book/9.5/)
+* [Microsoft MVVM](https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/february/patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern)
+
+
+
 ## Module
 [⬆](#content)
-
 ---
 layout: pattern
 title: Module
@@ -7348,7 +7360,6 @@ An object that applies this pattern can provide the equivalent of a namespace, p
 
 ## Monad
 [⬆](#content)
-
 ---
 layout: pattern
 title: Monad
@@ -7386,7 +7397,6 @@ Use the Monad in any of the following situations
 
 ## Monostate
 [⬆](#content)
-
 ---
 layout: pattern
 title: MonoState
@@ -7425,7 +7435,6 @@ Yet to see this.
 
 ## Multiton
 [⬆](#content)
-
 ---
 layout: pattern
 title: Multiton
@@ -7546,7 +7555,6 @@ a well-known access point.
 
 ## Mute Idiom
 [⬆](#content)
-
 ---
 layout: pattern
 title: Mute Idiom
@@ -7576,7 +7584,6 @@ Use this idiom when
 
 ## Naked Objects
 [⬆](#content)
-
 ---
 layout: pattern
 title: Naked Objects
@@ -7612,7 +7619,6 @@ Use the Naked Objects pattern when
 
 ## Null Object
 [⬆](#content)
-
 ---
 layout: pattern
 title: Null Object
@@ -7802,7 +7808,6 @@ Use the Null Object pattern when
 
 ## Object Mother
 [⬆](#content)
-
 ---
 layout: pattern
 title: Object Mother
@@ -7834,7 +7839,6 @@ Use the Object Mother pattern when
 
 ## Object Pool
 [⬆](#content)
-
 ---
 layout: pattern
 title: Object Pool
@@ -7987,7 +7991,6 @@ Use the Object Pool pattern when
 
 ## Observer
 [⬆](#content)
-
 ---
 layout: pattern
 title: Observer
@@ -8164,7 +8167,6 @@ objects are. In other words, you don't want these objects tightly coupled.
 
 ## Page Object
 [⬆](#content)
-
 ---
 layout: pattern
 title: Page Object
@@ -8195,9 +8197,149 @@ Use the Page Object pattern when
 * [Martin Fowler - PageObject](http://martinfowler.com/bliki/PageObject.html)
 * [Selenium - Page Objects](https://github.com/SeleniumHQ/selenium/wiki/PageObjects)
 
+## Parameter Object
+[⬆](#content)
+---
+layout: pattern
+title: Parameter Object
+folder: parameter-object
+permalink: /patterns/parameter-object/
+categories: Behavioral
+tags:
+- Extensibility
+---
+
+## Intent
+
+The syntax of Java language doesn’t allow you to declare a method with a predefined value
+for a parameter. Probably the best option to achieve default method parameters in Java is
+by using the method overloading. Method overloading allows you to declare several methods
+with the same name but with a different number of parameters. But the main problem with
+method overloading as a solution for default parameter values reveals itself when a method
+accepts multiple parameters. Creating an overloaded method for each possible combination of
+parameters might be cumbersome. To deal with this issue, the Parameter Object pattern is used.
+
+## Explanation
+
+The Parameter Object is simply a wrapper object for all parameters of a method.
+It is nothing more than just a regular POJO. The advantage of the Parameter Object over a
+regular method parameter list is the fact that class fields can have default values.
+Once the wrapper class is created for the method parameter list, a corresponding builder class
+is also created. Usually it's an inner static class. The final step is to use the builder
+to construct a new parameter object. For those parameters that are skipped,
+their default values are going to be used.
+
+
+**Programmatic Example**
+
+Here's the simple `SearchService` class where Method Overloading is used to default values here. To use method overloading, either the number of arguments or argument type has to be different.
+
+```java
+public class SearchService {
+  //Method Overloading example. SortOrder is defaulted in this method
+  public String search(String type, String sortBy) {
+    return getQuerySummary(type, sortBy, SortOrder.DESC);
+  }
+
+  /* Method Overloading example. SortBy is defaulted in this method. Note that the type has to be 
+  different here to overload the method */
+  public String search(String type, SortOrder sortOrder) {
+    return getQuerySummary(type, "price", sortOrder);
+  }
+
+  private String getQuerySummary(String type, String sortBy, SortOrder sortOrder) {
+    return "Requesting shoes of type \"" + type + "\" sorted by \"" + sortBy + "\" in \""
+        + sortOrder.getValue() + "ending\" order...";
+  }
+}
+
+```
+
+Next we present the `SearchService` with `ParameterObject` created with Builder pattern.
+
+```java
+public class SearchService {
+
+  /* Parameter Object example. Default values are abstracted into the Parameter Object 
+  at the time of Object creation */
+  public String search(ParameterObject parameterObject) {
+    return getQuerySummary(parameterObject.getType(), parameterObject.getSortBy(),
+        parameterObject.getSortOrder());
+  }
+  
+  private String getQuerySummary(String type, String sortBy, SortOrder sortOrder) {
+    return "Requesting shoes of type \"" + type + "\" sorted by \"" + sortBy + "\" in \""
+        + sortOrder.getValue() + "ending\" order...";
+  }
+}
+
+public class ParameterObject {
+  public static final String DEFAULT_SORT_BY = "price";
+  public static final SortOrder DEFAULT_SORT_ORDER = SortOrder.ASC;
+
+  private String type;
+  private String sortBy = DEFAULT_SORT_BY;
+  private SortOrder sortOrder = DEFAULT_SORT_ORDER;
+
+  private ParameterObject(Builder builder) {
+    type = builder.type;
+    sortBy = builder.sortBy != null && !builder.sortBy.isBlank() ? builder.sortBy : sortBy;
+    sortOrder = builder.sortOrder != null ? builder.sortOrder : sortOrder;
+  }
+
+  public static Builder newBuilder() {
+    return new Builder();
+  }
+
+  //Getters and Setters...
+
+  public static final class Builder {
+
+    private String type;
+    private String sortBy;
+    private SortOrder sortOrder;
+
+    private Builder() {
+    }
+
+    public Builder withType(String type) {
+      this.type = type;
+      return this;
+    }
+
+    public Builder sortBy(String sortBy) {
+      this.sortBy = sortBy;
+      return this;
+    }
+
+    public Builder sortOrder(SortOrder sortOrder) {
+      this.sortOrder = sortOrder;
+      return this;
+    }
+
+    public ParameterObject build() {
+      return new ParameterObject(this);
+    }
+  }
+}
+
+
+```
+
+## Class diagram
+
+![alt text](./etc/parameter-object.png "Parameter Object")
+
+## Applicability
+
+This pattern shows us the way to have default parameters for a method in Java as the language doesn't default parameters feature out of the box.
+
+## Credits
+
+- [Does Java have default parameters?](http://dolszewski.com/java/java-default-parameters)
+
 ## Partial Response
 [⬆](#content)
-
 ---
 layout: pattern
 title: Partial Response
@@ -8227,7 +8369,6 @@ Use the Partial Response pattern when
 
 ## Pipeline
 [⬆](#content)
-
 ---
 layout: pattern
 title: Pipeline
@@ -8353,7 +8494,6 @@ the [Single Responsibility Principle (SRP)](https://java-design-patterns.com/pri
 
 ## Poison Pill
 [⬆](#content)
-
 ---
 layout: pattern
 title: Poison Pill
@@ -8583,7 +8723,6 @@ Use the Poison Pill idiom when:
 
 ## Priority Queue Pattern
 [⬆](#content)
-
 ---
 layout: pattern
 title: Priority Queue Pattern
@@ -8800,7 +8939,6 @@ Use the Priority Queue pattern when:
 
 ## Private Class Data
 [⬆](#content)
-
 ---
 layout: pattern
 title: Private Class Data
@@ -8939,7 +9077,6 @@ Use the Private Class Data pattern when
 
 ## Producer Consumer
 [⬆](#content)
-
 ---
 layout: pattern
 title: Producer Consumer
@@ -8966,7 +9103,6 @@ Use the Producer Consumer idiom when
 
 ## Promise
 [⬆](#content)
-
 ---
 layout: pattern
 title: Promise
@@ -9283,7 +9419,6 @@ asynchronously and:
 
 ## Property
 [⬆](#content)
-
 ---
 layout: pattern
 title: Property
@@ -9312,7 +9447,6 @@ Use the Property pattern when
 
 ## Prototype
 [⬆](#content)
-
 ---
 layout: pattern
 title: Prototype
@@ -9412,7 +9546,6 @@ instantiating the class manually, each time with the appropriate state.
 
 ## Proxy
 [⬆](#content)
-
 ---
 layout: pattern
 title: Proxy
@@ -9588,7 +9721,6 @@ objects should have different access rights.
 
 ## Queue Based Load Leveling
 [⬆](#content)
-
 ---
 layout: pattern
 title: Queue based load leveling
@@ -9628,7 +9760,6 @@ for both the task and the service.
 
 ## Reactor
 [⬆](#content)
-
 ---
 layout: pattern
 title: Reactor
@@ -9667,7 +9798,6 @@ Use Reactor pattern when
 
 ## Reader Writer Lock
 [⬆](#content)
-
 ---
 layout: pattern
 title: Reader Writer Lock
@@ -9988,7 +10118,6 @@ Use the Repository pattern when
 
 ## Resource Acquisition is Initialization
 [⬆](#content)
-
 ---
 layout: pattern
 title: Resource Acquisition Is Initialization
@@ -10012,7 +10141,6 @@ Use the Resource Acquisition Is Initialization pattern when
 
 ## Retry
 [⬆](#content)
-
 ---
 layout: pattern
 title: Retry
@@ -10174,7 +10302,6 @@ environment, and if the business requirements allow it.
 
 ## Role Object
 [⬆](#content)
-
 ---
 layout: pattern
 title: Role Object
@@ -10213,7 +10340,6 @@ Use the Role Object pattern, if:
 
 ## Saga
 [⬆](#content)
-
 ---
 layout: pattern
 title: Saga
@@ -10267,7 +10393,6 @@ Use the Saga pattern, if:
 
 ## Separated Interface
 [⬆](#content)
-
 ---
 layout: pattern
 title: Separated Interface
@@ -10409,7 +10534,6 @@ Use the Separated interface pattern when
 
 ## Servant
 [⬆](#content)
-
 ---
 layout: pattern
 title: Servant
@@ -10440,7 +10564,6 @@ Use the Servant pattern when
 
 ## Serverless
 [⬆](#content)
-
 ---
 layout: pattern
 title: Serverless
@@ -10648,7 +10771,6 @@ curl -X GET \
 
 ## Service Layer
 [⬆](#content)
-
 ---
 layout: pattern
 title: Service Layer
@@ -10882,7 +11004,6 @@ Use the Service Layer pattern when
 
 ## Service Locator
 [⬆](#content)
-
 ---
 layout: pattern
 title: Service Locator
@@ -10929,7 +11050,6 @@ to a number of services that they don't potentially need.
 
 ## Sharding
 [⬆](#content)
-
 ---
 layout: pattern  
 title: Sharding 
@@ -10962,7 +11082,6 @@ This pattern offers the following benefits:
 
 ## Singleton
 [⬆](#content)
-
 ---
 layout: pattern
 title: Singleton
@@ -11055,7 +11174,6 @@ Use the Singleton pattern when
 
 ## Spatial Partition
 [⬆](#content)
-
 ---
 layout: pattern
 title: Spatial Partition
@@ -11135,7 +11253,6 @@ This pattern can be used:
 
 ## Special Case
 [⬆](#content)
-
 ---
 layout: pattern
 title: Special Case
@@ -11508,7 +11625,6 @@ for a particular class instance, or the same behavior after a null check.
 
 ## Specification
 [⬆](#content)
-
 ---
 layout: pattern
 title: Specification
@@ -11729,7 +11845,6 @@ Use the Specification pattern when
 
 ## State
 [⬆](#content)
-
 ---
 layout: pattern
 title: State
@@ -11900,10 +12015,159 @@ Use the State pattern in either of the following cases
 * [Head First Design Patterns: A Brain-Friendly Guide](https://www.amazon.com/gp/product/0596007124/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0596007124&linkCode=as2&tag=javadesignpat-20&linkId=6b8b6eea86021af6c8e3cd3fc382cb5b)
 * [Refactoring to Patterns](https://www.amazon.com/gp/product/0321213351/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321213351&linkCode=as2&tag=javadesignpat-20&linkId=2a76fcb387234bc71b1c61150b3cc3a7)
 
+## Static Content Hosting
+[⬆](#content)
+---
+layout: pattern
+title: Static Content Hosting
+folder: cloud-static-content-hosting
+permalink: /patterns/cloud-static-content-hosting/
+categories: Cloud
+tags:
+- Cloud distributed
+---
+
+## Intent
+
+Deploy static content to a cloud-based storage service that can deliver them directly to the client.
+This can reduce the need for potentially expensive compute instances.
+
+## Explanation
+
+Real world example
+
+> A global marketing web site with static content needs to be quickly deployed to start attracting
+> potential customers. To keep the hosting expenses and maintenance minimum, a cloud hosted storage
+> service along with content delivery network is used.
+
+In plain words
+
+> Static Content Hosting pattern utilizes cloud native storage service to store the content and
+> global content delivery network to cache it in multiple data centers around the world.
+>
+> On a static website, individual webpages include static content. They might also contain
+> client-side scripts such as Javascript. By contrast, a dynamic website relies on server-side
+> processing, including server-side scripts such as PHP, JSP, or ASP.NET.
+
+Wikipedia says
+
+> A static web page (sometimes called a flat page or a stationary page) is a web page that is
+> delivered to the user's web browser exactly as stored, in contrast to dynamic web pages which are
+> generated by a web application.
+>
+> Static web pages are suitable for content that never or rarely needs to be updated, though modern
+> web template systems are changing this. Maintaining large numbers of static pages as files can be
+> impractical without automated tools, such as static site generators.
+
+**Example**
+
+![alt text](./etc/static-content-hosting.png "Static Content Hosting")
+
+In this example we create a static web site using AWS S3 and utilize AWS Cloudfront to distribute
+the content globally.
+
+1. First you will need an AWS account. You can create a free one here: [AWS Free Tier](https://aws.amazon.com/free/free-tier/)
+
+2. Login to the [AWS Console](https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin)
+
+3. Go to Identity and Access Management (IAM) service.
+
+4. Create IAM user that has only the necessary rights for this application.
+
+    * Click `Users`
+    * Click `Add user`. Choose `User name` as you wish and `Access type` should be `Programmatic access`. Click `Next: Permissions`.
+    * Choose `Attach existing policies directly`. Select `AmazonS3FullAccess` and `CloudFrontFullAccess`. Click `Next: Tags`.
+    * No tags are necessarily needed, so just click `Next: Review`.
+    * Review the presented information and if all seems good click `Create user`.
+    * You are presented with `Access key ID` and `Secret access key` which you will need to complete this example, so store them safely.
+    * Click `Close`.
+
+5. [Install AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv1.html) to gain programmic access to AWS cloud.
+
+6. Configure AWS CLI with command `aws configure` as desribed in the [instructions](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config)
+
+7. Create AWS S3 bucket for the web site content. Note that the S3 bucket names must be globally unique.
+
+    * The syntax is `aws s3 mb <bucket name>` as described in the [instructions](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-managing-buckets-creating)
+    * For example `aws s3 mb s3://my-static-website-jh34jsjmg`
+    * Verify that the bucket was successfully created with command `aws s3 ls` which list the existing buckets
+
+8. Configure the bucket as a web site with command `aws s3 website` as described in the [instructions](https://docs.aws.amazon.com/cli/latest/reference/s3/website.html).
+
+    * E.g. `aws s3 website s3://my-static-website-jh34jsjmg --index-document index.html --error-document error.html`
+
+9. Upload content to the bucket.
+
+    * First create the content, at least `index.html` and `error.html` documents.
+    * Upload the content to your bucket as described [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-managing-objects-copy)
+    * E.g. `aws s3 cp index.html s3://my-static-website-jh34jsjmg` and `aws s3 cp error.html s3://my-static-website-jh34jsjmg`
+
+10. Next we need to set the bucket policy to allow read access.
+
+    * Create `policy.json` with the following contents (note that you need to replace the bucket name with your own).
+
+    ```json
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "PublicReadGetObject",
+                "Effect": "Allow",
+                "Principal": "*",
+                "Action": "s3:GetObject",
+                "Resource": "arn:aws:s3:::my-static-website-jh34jsjmg/*"
+            }
+        ]
+    }
+    ```
+
+    * Set the bucket policy according to these [instructions](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-bucket-policy.html)
+    * E.g. `aws s3api put-bucket-policy --bucket my-static-website-jh34jsjmg --policy file://policy.json`
+
+11. Test the web site in your browser.
+
+    * The web site URL format is `http://<bucket-name>.s3-website-<region-name>.amazonaws.com`
+    * E.g. this web site was created in `eu-west-1` region with name `my-static-website-jh34jsjmg` so it can be accessed via url `http://my-static-website-jh34jsjmg.s3-website-eu-west-1.amazonaws.com`
+
+12. Create CloudFormation distribution for the web site.
+
+    * The syntax is described in [this reference](https://docs.aws.amazon.com/cli/latest/reference/cloudfront/create-distribution.html)
+    * E.g. the easiest way is to call `aws cloudfront create-distribution --origin-domain-name my-static-website-jh34jsjmg.s3.amazonaws.com --default-root-object index.html`
+    * There's also JSON syntax e.g. `--distribution-config file://dist-config.json` to pass distribution configuration arguments in file
+    * The output of the call will show you the exact distribution settings including the generated CloudFront domain name you can use for testing e.g. `d2k3xwnaqa8nqx.cloudfront.net`
+    * CloudFormation distribution deployment takes some time, but once it's completed your web site is served from data centers all around the globe!
+
+13. That's it! You have implemented a static web site with content distribution network serving it lightning fast all around the world.
+
+    * To update the web site you need to update the objects in S3 bucket and invalidate the objects in the CloudFront distribution
+    * To do it from AWS CLI see [this reference](https://docs.aws.amazon.com/cli/latest/reference/cloudfront/create-invalidation.html)
+    * Some further development you might want to do is serve the content over https and add a domain name for your site
+
+## Applicability
+
+Use the Static Content Hosting pattern when you want to:
+
+* Minimize the hosting cost for websites and applications that contain some static resources.
+* Build a globally available web site with static content
+* Monitor the web site traffic, bandwidth usage, costs etc.
+
+## Typical Use Case
+
+* Web sites with global reach
+* Content produced by static web site generators
+* Web sites with no dynamic content requirements
+
+## Real world examples
+
+* [Java Design Patterns web site](https://java-design-patterns.com)
+
+## Credits
+
+* [Static Content Hosting pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting)
+
 
 ## Step Builder
 [⬆](#content)
-
 ---
 layout: pattern
 title: Step Builder
@@ -11930,7 +12194,6 @@ Use the Step Builder pattern when the algorithm for creating a complex object sh
 
 ## Strangler
 [⬆](#content)
-
 ---
 layout: pattern
 title: Strangler
@@ -11964,7 +12227,6 @@ so usually use it when the system is not so simple.
 
 ## Strategy
 [⬆](#content)
-
 ---
 layout: pattern
 title: Strategy
@@ -12160,7 +12422,6 @@ Use the Strategy pattern when
 
 ## Subclass Sandbox
 [⬆](#content)
-
 ---  
 layout: pattern  
 title: Subclass Sandbox 
@@ -12192,7 +12453,6 @@ The Subclass Sandbox pattern is a very simple, common pattern lurking in lots of
 
 ## Template Method
 [⬆](#content)
-
 ---
 layout: pattern
 title: Template method
@@ -12353,7 +12613,6 @@ Method `GenericServlet.init(ServletConfig config)` is the template method in thi
 
 ## Thread Pool
 [⬆](#content)
-
 ---
 layout: pattern
 title: Thread Pool
@@ -12538,7 +12797,6 @@ Use the Thread Pool pattern when
 
 ## Throttling
 [⬆](#content)
-
 ---
 layout: pattern
 title: Throttling
@@ -12736,7 +12994,6 @@ The Throttling pattern should be used:
 
 ## Thread Local Storage
 [⬆](#content)
-
 ---
 layout: pattern
 title: Thread Local Storage
@@ -12761,7 +13018,6 @@ Use the Thread Local Storage in any of the following situations
 
 ## Tolerant Reader
 [⬆](#content)
-
 ---
 layout: pattern
 title: Tolerant Reader
@@ -13024,7 +13280,6 @@ Bu proje, MIT lisansı koşulları altında lisanslanmıştır.
 
 ## Trampoline
 [⬆](#content)
-
 ---
 layout: pattern
 title: Trampoline
@@ -13178,7 +13433,6 @@ Use the Trampoline pattern when
 
 ## Transaction Script
 [⬆](#content)
-
 ---
 layout: pattern
 title: Transaction Script
@@ -13301,7 +13555,6 @@ patterns.
 
 ## Twin
 [⬆](#content)
-
 ---
 layout: pattern
 title: Twin
@@ -13332,7 +13585,6 @@ Use the Twin idiom when
 
 ## Type Object Pattern
 [⬆](#content)
-
 ---
 layout: pattern
 title: Type-Object
@@ -13370,7 +13622,6 @@ This pattern can be used when:
 
 ## Unit of Work
 [⬆](#content)
-
 ---
 layout: pattern
 title: Unit Of Work
@@ -13574,7 +13825,6 @@ Use the Unit Of Work pattern when
 
 ## Update Method
 [⬆](#content)
-
 ---  
 layout: pattern  
 title: Update Method
@@ -13614,7 +13864,6 @@ Update methods work well when:
 
 ## Value Object
 [⬆](#content)
-
 ---
 layout: pattern
 title: Value Object
@@ -13654,7 +13903,6 @@ Use the Value Object when
 
 ## Version Number
 [⬆](#content)
-
 ---
 layout: pattern
 title: Version Number
@@ -13827,7 +14075,6 @@ via Optimistic Offline Lock pattern.
 
 ## Visitor
 [⬆](#content)
-
 ---
 layout: pattern
 title: Visitor
